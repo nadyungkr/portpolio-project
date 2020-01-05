@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* reset.css */
+html,body{width:100%;height:100%;}
+
+body,div,dl,dt,dd,ul,li,ol,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,table,hr
+address,header,footer,nav,article,small{margin:0;padding:0;}
+header,footer,nav,article,
+table{border-collapse:collapse;}
+main,header,section,nav,footer,aside,article,figure{display:block;}
+img,fieldset{border:none;}
+
+small,address,caption,cite,code,em,strong,th{font-style:normal;font-weight:normal;}
+
+ol,ul{list-style:none;}
+
+caption,th{text-align:left;}
+
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+
+q:after,q:before{content:"";}
+
+abbr,acronym{border:none;}
+
+label,img,input,select,textarea,button{vertical-align:middle;}
+
+hr{display:none;}
+
+a{text-decoration:none;}
+
+
+#skipNavi { margin: 0; padding: 0; }
+#skipNavi a { display: block; overflow: hidden; 
+					position: absolute; left: 0; top: -10000px; }
+
+#skipNavi a:hover, #skipNavi a:focus, #skipNavi a:active { top: 0px; z-index: 1001;
+padding: 15px 0; 
+background-color: #004b9d;
+color: #fff; 
+font-size: 120%; 
+width: 100%;
+text-align: center; }

@@ -1,0 +1,308 @@
+@charset "utf-8";
+
+body {font-family:"RixSGoM,Dotum,Arial;",sans-serif;
+		   font-size: 14px; background:#090909; min-width:983px;}
+.inner, .foot_inner{margin:0 auto; width:983px;}
+.bindiv{width:100%;height:50px;}
+.blind{position:absolute;top:0;left:0;margin:0;padding:0;width:1px;height:1px;overflow:hidden;}
+.update,.notice,.rotation,.nexus,.universe{border-top:1px solid #c9aa71;}
+.update:before,.notice:before,.rotation:before,.nexus:before,.universe:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: -2px;
+    height: 5px;
+    width: 30px;
+    background-color: #ccac63;}
+
+#header{width:100%; height:50px;
+			   background:#090909;
+			   border-bottom:2px solid #262626;
+			   overflow:hidden;
+			   position:fixed;
+			   top:0;
+			   z-index:100;}
+
+#header h1{background:url(../images/icon-game-lol.png) no-repeat 5px 8px; display:inline-block; line-height:50px; height: 50px; padding-left: 50px;}
+#header .header_inner {text-align:center;
+										height:50px;
+										}
+		
+#header .clearfix{position:absolute; top:0; left:50%; transform:translateX(-50%);}
+#header .clearfix li{float:left; text-align:center;}
+#header .clearfix li a{color:#c9aa71; letter-spacing:-2px;
+								   font-weight:bold;
+								    display:inline-block; padding:0 10px;
+									line-height:50px; text-align:center;}
+
+#header .clearfix li:hover a{color:#f1e6d0;}
+
+
+#header .utilmenu{position:absolute; top:9px; right:12px;
+								display:inline-block;
+								letter-spacing:-2px;
+								font-size:1em;}
+#header dl dd {float:left;}
+#header dl dd a {display:inline-block;
+							 color:#c9aa71;}
+
+/*유틸메뉴*/
+#header .u1{width:28px; height:28px;
+					 background:url(../images/sprites2.png) -1px -41px no-repeat;
+					 margin:1px 26px 0 0;}
+
+#header .u1:hover{background:url(../images/sprites2.png) -41px -1px no-repeat;}
+
+#header .u2{margin:6px 19px 0 0;}
+#header .u2:after{content:"|";
+							  margin:0 0 0 16px;
+							  color:#262626;}
+#header .u2:hover a{color:#f1e6d0;}
+
+#header .u3{width:121px; height:32px;
+					 background:url(../images/sprites.png) -142px -4px no-repeat;}
+#header .u3:hover{background:url(../images/sprites.png) -4px -55px no-repeat; }
+#header .u3 a{margin:6px 0 0 38px; color:#b2d9db;}
+
+/*main_visual*/
+main{position:relative;}
+.kor{position:absolute; display:block; top:55px; right:15px; z-index:9999; font-size:16px; text-shadow:0 0 5px #000;}
+.kor a{color:#9fc0c7;}
+.main_visual{width:100%;
+					  overflow:hidden; position:relative;}
+.main_visual video{position:absolute; top:0;}
+.main_visual p{width:100%; height:540px; 
+							background:url(../images/top_bnr_2.jpg)no-repeat; 
+							background-size:cover;}
+.main_visual a{display:block; width:100%; height:560px;}
+
+/*inner update와 공지사항*/
+.update{margin-top:85px; position:relative;
+			 overflow:hidden;
+			} 
+.update section{width:980px; height:71.94px; box-sizing:border-box; }
+.update h2 {font-size:25px; color:#d4c6a9; padding-top:19px;}
+.update h2 span{font-size:13px; color:#93743d; position:absolute; top:29px; left:109px;}
+.update li	{float:left; width:300px; height:300px; 
+				
+				overflow:hidden; position:relative;}
+.m40{margin-right:40px;}
+.t22{margin-top:22px;}
+.update li div {width:300px; height:300px; position:relative; top:0; 
+					   line-height:300px; text-align:center; transition:all .8s;}
+.update li:nth-child(1) div{
+								 background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/update01.png) 50% no-repeat;
+								 background-size:cover;
+								 }
+.update li:nth-child(2) div{
+								 background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/update02.jpg) 50% no-repeat;
+								 background-size:cover;
+								 }
+.update li:nth-child(3) div{
+								 background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/update07.jpg) 50% no-repeat;
+								 background-size:cover;
+								 }
+.update li:nth-child(4) div{
+								 background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/update04.jpg) 50% no-repeat;
+								 background-size:cover;
+								 }
+.update li:nth-child(5) div{
+								background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/update05.jpg) 50% no-repeat;
+								 background-size:cover;
+								 }
+.update li:last-child div{
+								 background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/update06.png) 50% no-repeat;
+								 background-size:cover;
+								 }
+.update li:hover div
+		{box-sizing:border-box;
+		overflow:hidden;
+		transform:scale(1.2);}
+.update h3, .update small{position:absolute; z-index:2;}
+.update h3{top:200px; left:20px;
+				font-size:28px; letter-spacing:-2; 
+				 line-height:1.2;
+				 color:#d4c6a9; font-weight:900;
+				 text-shadow:0 2px 2px rgba(0,0,0,.5);}
+.update small{display:inline; background:#6f0404; color:#fff; top:0; left:0;}
+.update li a{display:block;width:300px; height:300px;}
+.update .more {position:absolute; top:24px; right:0; }
+.update .more a{color:#bc9e58;}
+.update .more span{padding-left:16px;}
+.update .more:after{content:"·"; display:inline-block; 
+							   color:#bc9e58; z-index:9999;
+							   position:absolute; right:17px;}
+.update li:nth-child(2){margin-left:40px;}
+.update li:nth-child(2) h3{top:180px;}
+
+/*공지사항*/
+.notice{overflow:hidden; position:relative; 
+			margin-top:78px;}
+.notice section{width:980px; height:71.94px; box-sizing:border-box;}
+.notice h2 {font-size:25px; color:#d4c6a9; margin-bottom:30px; padding-top:19px;}
+.notice h2 span{font-size:13px; color:#93743d; position:absolute; top:29px; left:109px;}
+.notice .more {position:absolute; top:24px; right:0;}
+.notice .more span{padding-left:16px;}
+.notice .more:after{content:"·"; display:inline-block; 
+							   color:#bc9e58; z-index:9999;
+							   position:absolute; right:17px;}
+.notice .more a{color:#bc9e58;}
+.placeholder{float:left; background:url(../images/placeholder.jpg) no-repeat;
+					width:300px; height:300px;}
+.notice ul{display:inline-block; margin-left:40px; width:640px; height:300px;}
+.notice li{font-size:20px; border-top:1px solid #342b20; border-bottom:1px solid #342b20;
+				padding-bottom:2px; letter-spacing:-1px;}
+.notice li a{color:#bbb196;}
+.notice span{font-size:13px; color:#66512f;}
+.notice small{font-size:12px; padding-left:13px; color:#494949; letter-spacing:1px;}
+
+/*전설이 펭귄 이미지*/
+.screen_visual{background:url(../images/middle_ban.png)no-repeat;
+						 width:100%; height:576px; overflow:hidden; margin:0 auto; text-align:center;}
+.screen_visual a{display:block;}
+
+/*챔피언 로테이션*/
+.rotation{position:relative; overflow:hidden; 
+			  margin-top:75px;}
+.rotation section{width:980px; height:71.94px; box-sizing:border-box;}
+.rotation h2{font-size:25px; color:#d4c69a; margin-bottom:30px; padding-top:19px;}
+.rotation h2 span{font-size:13px; color:#93743d; position:absolute; top:29px; left:186px;}
+.rotation li{float:left; width:100px; height:105px;}
+.rotation li:first-child{background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/Akali_0.jpg)no-repeat; background-size:cover;}
+.rotation li:nth-child(2){background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/Chogath_0.jpg)no-repeat; background-size:cover;}
+.rotation li:nth-child(3){background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/Graves_0.jpg)no-repeat; background-size:cover;}
+.rotation li:nth-child(4){background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/Jinx_0.jpg)no-repeat; background-size:cover;}
+.rotation li:nth-child(5){background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/Kennen_0.jpg)no-repeat; background-size:cover;}
+.rotation li:nth-child(6){background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/KogMaw_0.jpg)no-repeat; background-size:cover;}
+.rotation li:nth-child(7){background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/MasterYi_0.jpg)no-repeat; background-size:cover;}
+.rotation li:nth-child(8){background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/Mordekaiser_0.jpg)no-repeat; background-size:cover;}
+.rotation li:nth-child(9){background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/Renekton_0.jpg)no-repeat; background-size:cover;}
+.rotation li:nth-child(10){background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/Shyvana_0.jpg)no-repeat; background-size:cover;}
+.rotation li:nth-child(11){background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/Soraka_0.jpg)no-repeat; background-size:cover;}
+.rotation li:nth-child(12){background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/TwistedFate_0.jpg)no-repeat; background-size:cover;}
+.rotation li:nth-child(13){background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/Vladimir_0.jpg)no-repeat; background-size:cover;}
+.rotation li:nth-child(14){background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/Volibear_0.jpg)no-repeat; background-size:cover;}
+.rotation li:nth-child(15){background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/Zyra_0.jpg)no-repeat; background-size:cover;}
+.rotation li:last-child{background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),url(../images/placeholder-champ.jpg)no-repeat; background-size:cover;}
+
+.mr{margin-right:25px;}
+.l1{margin-bottom:25px;}
+.rotation li a{display:block; padding-top:80px; font-size:14px;
+					font-weight:bold; line-height:1;
+					color:#c8bca1; text-align:center;}
+.rotation li:nth-child(12) a{padding-top:70px;}
+
+/*유니버스, 넥서스, 라이엇 스토어를 묶는 그룹 div*/
+.event2{margin-top:80px; position:relative;  height:336px; overflow:hidden;}
+/*유니버스*/
+.universe{position:relative; top:0; left:0; overflow:hidden; 
+				width:300px; height:336px; 
+				display:inline-block;}
+.universe section{width:300px; height:71px; box-sizing:border-box;}
+.universe h2{font-size:25px; color:#d4c69a; padding-top:19px;}
+.universe h2 span{font-size:13px; color:#93743d; position:absolute; top:29px; left:107px;}
+.back{position:relative; top:0;
+		  width:300px; height:263px;
+		  background:url(../images/twilight-star-splash.jpg) 50% no-repeat;
+		  background-size:cover;
+		  line-height:263px; text-align:center; transition:all .8s;} 
+.universe small{position:absolute;  top:71px; display:inline; 
+						  background:#6f0404; color:#fff; padding:2px 0; z-index:2;}
+.universe h3{position:absolute; top:263px; left:15px; font-size:20px;
+					  color:#fff; text-shadow:0 2px 2px rgba(0,0,0,.5);
+					  font-weight:bold; z-index:2;}
+.universe a{display:block; width:300px; height:236px;}
+
+/*넥서스*/
+.nexus{position:relative; top:0; left:30px; overflow:hidden; 
+			width:300px; height:336px; 
+			display:inline-block;}
+.nexus section{width:300px; height:71px; box-sizing:border-box;}
+.nexus h2{font-size:25px; color:#d4c69a; padding-top:19px;}
+.nexus h2 span{font-size:13px; color:#93743d; position:absolute; top:29px; left:83px;}
+.reback{width:300px; height:263px;
+		background:url(../images/teemooooo.jpg) 50% no-repeat;
+		background-size:cover;
+		line-height:263px; text-align:center; transition:all .8s;}
+.nexus small{position:absolute;  top:71px; display:inline; 
+					  background:#6f0404; color:#fff; padding:2px 0; z-index:2;}
+.nexus h3{position:absolute; top:263px; left:15px; font-size:20px;
+				  color:#fff; text-shadow:0 2px 2px rgba(0,0,0,.5);
+				  font-weight:bold; z-index:2;}
+.nexus a{display:block; width:300px; height:236px;}
+/*라이엇 스토어*/
+.riot_store{position:absolute; top:0; left:680px;
+				  display:inline-block; width:300px; height:215px; 
+				  background:linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.74)),
+				  url(../images/merch_banner_1280_720.jpg) 50% no-repeat;
+				  background-size:cover;
+				 }
+.riot_store h3{margin:167px 0 0 20px; font-size:26px; color:#d4c6a9;
+					   text-shadow:0 2px 2px rgba(0,0,0,.5);
+					   font-weight:bold;}
+.riot_store a{display:inline-block; width:300px; height:215px;}
+			
+
+/*메인 sns 바로가기*/
+.main_sns{position:absolute; top:234px; left:680px;}
+.main_sns li{float:left; 
+					 width:99px; height:99px; box-sizing:border-box;}
+.main_sns li:first-child,.main_sns li:nth-child(2){margin-right:2px;}
+.main_sns li:first-child{background:url(../images/sns-sprites.png)-10px -9px no-repeat;}
+.main_sns li:nth-child(2){background:url(../images/sns-sprites.png) -9px -126px no-repeat;}
+.main_sns li:last-child{background:url(../images/sns-sprites.png) -128px -9px no-repeat;}
+.main_sns li a{display:inline-block; width:99px; height:99px;}
+
+/*footer*/
+.footer_content {width:100%; margin-top:100px; height:64px; 
+							text-align:center;
+							border-top:2px solid #755729; border-bottom:1px solid #342b20; }
+
+.footer_content li{display:inline-block; margin:35px 30px 11px 0; 
+							 font-size:16px; font-weight:bold;}
+.footer_content li:hover{padding-bottom:5px; border-bottom:2px solid #7d6033;}
+.footer_content li a{color:#d4c6a9;}
+
+/*footer logo와 sns*/
+.foot_logo{background:url(../images/white-s.png)no-repeat; 
+				   width:130px; height:55px; margin:30px auto;}
+.foot_sns{text-align:center;}
+.foot_sns li{width:32px; height:32px; display:inline-block; 
+					background:url(../images/social-sprites.png)no-repeat;}
+.foot_sns a{display:block; width:32px; height:32px;}
+.foot_sns li:first-child{background-position:-84px 0; margin-right:16px;}
+.foot_sns li:nth-child(2){background-position:0 0; margin-right:16px;}
+.foot_sns li:last-child{background-position:-42px 0;}
+
+/*footer address*/
+footer{padding-bottom:100px;}
+footer address p{font-size: 11px;
+    line-height: 1.316;
+    max-width: 500px;
+    text-align: center;
+    color: rgba(209, 197, 169, 0.4);
+    transition:color 0.2s linear;
+    word-break:keep-all; margin:20px auto;
+	font-weight:bold;}
+footer address a{color: rgba(209, 197, 169, 0.6);
+							  text-decoration: underline;}
+footer address a:hover{color:#aaa089;}
+
+.foot_legal{text-align:center;}
+.foot_legal li{display:inline-block; padding-right:13px;
+					font-size: 11px;
+					 line-height: 1.316;
+				    max-width: 500px;
+					text-align: center;
+					 transition:color 0.2s linear;
+				    word-break:keep-all; margin:20px auto;
+					}
+.foot_legal a{color: rgba(209, 197, 169, 0.4);}
+.decobold{font-weight:bold; text-decoration:underline;}
+.foot_rating{background:url(../images/kr-rating.png) no-repeat;
+					width:450px; height:71px;
+					background-color: transparent;
+					background-repeat: no-repeat;
+					background-size: contain;
+					margin: 5px auto;
+					max-width: 100%;}

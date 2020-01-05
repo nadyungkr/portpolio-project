@@ -1,0 +1,102 @@
+@charset "utf-8";
+@font-face{font-family:"NanumGothic";
+				src:url("../font/NanumGothic-Regular.ttf");}
+@font-face{font-family:"NanumGothicEB";
+				src:url("../font/NanumGothic-ExtraBold.ttf");}
+
+body{font-family:"NanumGothic",sans-serif; font-size:14px; background:#fff; overflow:auto; min-width:1140px;}
+a{text-decoration:none;}
+
+.inner{margin:0 auto; width:1140px;}
+
+#header{width:100%; height:70px;
+			   background:#fff;
+			   border-bottom:1px solid #777;
+			   position:fixed;
+			   top:0;
+			   z-index:100;
+               text-align:center;}
+
+#header .inner{position:relative;}
+#header h1{position:absolute; top:0; left:0; line-height:70px;}
+#header h1 img{width:86px; height:35px;}
+#header #gnb .depth1{float:right;} /*주메뉴 오른쪽 상단에 위치*/
+#header #gnb .depth1 > li{float:left;} /*주메뉴 왼쪽으로 정렬*/
+#header #gnb .depth1 > li > a{color:#777; display:inline-block; padding:10px 15px; 
+											line-height:50px; text-align:center; font-weight:700;
+											letter-spacing:0.24px;}
+											/*주메뉴의 색깔은 회색, 줄간격과 패딩, 굵기 조절*/
+#header #gnb .depth2 {position:absolute; display:none;
+								 top:50px; border:1px solid #000;
+								 background:#fff; width:150px;
+								 text-align:left; letter-spacing:0.28px;
+								 z-index:9999; font-weight:800;}
+								 /*부메뉴는 띄워서 안보이게 처리, 위치 조정 해놓기, 글씨 왼쪽 정렬
+								  자간 0.28px, z-index:9999; 글자 굵기 조절*/
+#header #gnb .depth2 a{color:#777;} /*depth2 li의 a들 컬러는 777;*/
+#header #gnb .depth2 li:nth-child(2){border-top:1px solid #000; border-bottom:1px solid #000; }
+													/*border해서 줄 넣기*/
+#header #gnb .depth2 li {padding:10px;} /*부메뉴 아래로 떨어지는 애들 사이마다 10px padding*/
+#header #gnb .depth1 li:hover .depth2{display:block; z-index:9999;}
+
+/*문제의 li:hover시 색깔 바꾸기 ㅡㅡ*/
+#header #gnb .depth2 li:hover a{color:#000;} /*부메뉴 마우스 올리면 글자 검정*/
+#header #gnb .depth1 li:hover .a1{color:#000;} /*주메뉴 마우스 올리면 글자 검정*/
+#header #gnb li:focus a{color:#009640;}
+/*글자 꾹 누르면 초록색으로 바뀌기*/
+
+.BVN{width:100%;}
+.BVNvideo{width:100% !important; height:700px; object-fit:cover;}
+.ban_1{height:320px;}
+.ban_2{height:350px;}
+.ban_3{height:410px;}
+.banall h3{font-size:28px; font-weight:900; letter-spacing:10px;}
+.banall h4{font-size:16px; font-weight:800;}
+
+.ban_1>.inner{position:relative;}
+.ban_1 h3{padding:93px 0 30px 98px;}
+.ban_1 h4{padding-left:98px;}
+.ban_1 img{position:absolute; width:460px; height:142px; left:580px; top:50%;}
+
+.ban_2{background:rgba(255,255,255,.9) url(../images/banner.jpg) center 55% no-repeat;
+		  color:#fff;} 
+
+.ban_2 .inner{position:relative;}
+/*.ban_2 p,.ban_2 h3,.ban_2 h4{position:absolute;}*/
+.ban_2 h3{padding:109px 0 30px 0;}
+.ban_2 h4{padding:0 0 23px 0;}
+.ban_2 .more{width:91px; height:37px; border:2px solid #fff; border-radius: 10px; 
+			 text-align:center; line-height:37px;}
+.ban_2 .more:hover{background:rgba(255,255,255,.3); transition:all .4s;}
+.ban_2 .more a{color:#fff; font-weight:900;}
+.ban_2 h3,.ban_2 h4,.ban_2 section{margin-left:389px;}
+.ban_2 p{position:absolute; left:45px; top:50%;}
+
+.ban_3{padding:90px 0; height:410px; box-sizing:border-box;}
+.ban_3 ul li{float:left; width:358px; height:233px; 
+			background:#fff; border:1px solid #e4e4e4; padding:0 30px; box-sizing:border-box;}
+.ban_3 ul li hr{display:block; border:1px solid #e4e4e4; margin:25px 0;}
+.ban_3 ul li:first-child{background:url(../images/image_holder.png)no-repeat 10% 60%; background-size:52px;}
+.ban_3 ul li:nth-child(2){margin:0 30px; background:url(../images/mic_holder.png)no-repeat 10% 60%; background-size:52px;}
+.ban_3 ul li:last-child{background:url(../images/gps_holder.png)no-repeat 10% 60%; background-size:52px;}
+.ban_3 .inner ul li h3{font-size:20px; letter-spacing:0; padding:30px 0 0 0;}
+.ban_3 .inner ul li h4{font-size:14px; padding:0 0 0 84px; word-wrap: break-word; 
+						word-spacing: normal; word-break: keep-all!important; color:#777;line-height:2; 
+						letter-spacing:-1px; font-weight:400;}
+.ban_3 .inner p.more{width:70px; height:24px; border:1px solid #000; 
+					 border-radius:10px; text-align:center; line-height:24px; margin:16px 0 0 80px;}
+.ban_3 .inner p.more a{color:#000; font-size:11px; font-weight:400;}
+.ban_3 .more:hover{background:rgba(26,26,26,.3); transition:all .5s;}
+
+
+footer{background:#2f2f2f; }
+footer .inner{padding:40px 0; position:relative;}
+footer address{font-size:13px; color:#858888;}
+footer .copyright{color:#a2a2a2; font-weight:800;}
+footer .footer_sns{position:absolute; top:38px; right:0;}
+footer .footer_sns li{display:inline-block; width:37.5px; height:37.5px; margin:0 5px;
+					  text-align: center; font-size: 1em; line-height: 2;}
+footer .footer_sns li a{display:block; width:37.5px; height:37.5px; border:1px solid #a2a2a2;
+						border-radius:50px; color:#a2a2a2;}
+footer .footer_sns li i{margin-top:12px;}
+footer .footer_sns li:hover a{color:#fff; border-color:#fff;}
