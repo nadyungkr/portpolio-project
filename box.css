@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+body{font-size:12px;
+font-family: 'Noto Sans KR', sans-serif;}
+
+/*header 부분*/
+header{
+	position:fixed;
+	width:100%;
+	height:60px;
+	background:rgba(26,26,26,.7);
+	z-index:9999;
+	box-shadow:0 5px 15px -5px #00000070;
+}
+
+header h1{
+	min-width:20%;
+	z-index:100;
+	position:absolute;
+	top:7.5px;
+	left:5%;
+	font-size:30px;
+	z-index:101;
+}
+
+header img{
+	width:140px;
+	height:40px;
+	min-width:20%;
+}
+
+header nav{
+	text-align:right;
+}
+
+header nav ul{
+  min-width:70%;
+	position:absolute;
+	top:22.5px;
+	right:5%;
+	z-index:101;
+
+}
+nav ul li{
+	display:inline-block;
+	padding-right:40px;
+}
+
+nav ul a{
+	color:#f1f1f1; 
+	font-weight:800;
+	font-size:15px;
+	
+}
+
+
+
+
+/* main 부분 */
+
+main {
+  width: 100%;
+  margin:0 auto;
+  height: 100% auto;
+  outline: 1px solid #c3c3c3;
+}
+
+.box {
+  width: 90%;
+  height:800px;
+}
+
+.Hello{
+	background:url(images/profile_bg1.jpg) 70% 50% no-repeat fixed;
+	background-size:cover;
+	width:100%;
+	height:1000px;
+	position:relative;
+}
+
+
+.Hello > div{
+  outline:1px solid red;
+	position:absolute;
+	top:10%;
+	left:5%;
+}
+
+.Hello > div > h2{
+	margin:10% 0 0 10%;
+	font-family: 'Black Han Sans', sans-serif;
+	font-size:60px;
+	line-height:1.4;
+	color:#fff;
+
+}
+
+.Hello > div > h2 > span{
+	color:#f5bc33;
+
+}
+
+.Hello > div > p{
+	font-size:20px;
+	margin:2% 10%;
+	color:#fff;
+
+}
+
+/*skil_content*/
+
+.skill_content{
+	background:url(images/profile_bg3.jpg) 60% 0 no-repeat fixed;
+	background-size:cover;
+	width:100%;
+	height:1300px;
+  position:relative;
+}
+
+.skill_content > div{
+	background:rgba(26,26,26,.5);
+	position:absolute;
+	top:20%;
+	left:5%;
+	z-index:1;
+}
+
+/*portpolio*/
+
+.portpolio_content{
+	padding:10% 0;
+  background-color:rgba(0,0,0,.9);
+	width:100%;
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content:space-around;
+	
+}
+
+.portpolio{
+	background-color:transparent;
+	width:260px;
+	height:260px;
+	margin:20% 0;
+	text-align:center;
+}
+
+
+.btn{
+	position:relative;
+	display:inline-block;
+	width:260px;
+	height:260px;
+	background:#f1f1f1;
+	box-shadow:0 5px 15px -5px #00000070;
+	color:#706f7f;
+	overflow:hidden;
+}
+
+.btn p{
+	padding-top:35%;
+	line-height:1.2;
+	font-size:30px;
+	letter-spacing:-2px;
+	font-weight:800;
+}
+
+.btn:hover p{
+	padding-top:30%;
+	transform:scale(1.2);
+	color:#f1f1f1;
+	font-weight:900;
+}
+
+.btn::before{
+	content:"";
+	position:absolute;
+	top:-150%;
+	left:-150%;
+	width:140%;
+	height:140%;
+	background:#706f7f;
+	transform:rotate(12deg);
+
+}
+.btn:hover::before{
+	animation: aaa 1s 1;
+	top: -20%;
+	left:-10%;
+}
+
+@keyframes aaa{
+	0%{left:-110%;
+	   top:110%;}
+
+	50%{left:10%;
+		top:-50%;}
+
+	100%{left:-10%;
+		top:-20%;}
+
+}
+
+
+
+
+
+
+/*portpolio2_content*/
+
+.portpolio2_content{
+	padding:5% 0;
+	background-color:rgba(0,0,0,.9);
+	width:100%;
+	height:800px;
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:space-around;
+	align-items:center;
+	
+}
+
+.portpolio2{
+	background-color:#fff;
+	width: 80%;
+	height:160px;
+	border:1px solid #ccc;
+
+}

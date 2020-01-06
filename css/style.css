@@ -28,13 +28,14 @@ a{text-decoration:none;}
 	line-height:1.2;
 	font-size:30px;
 	letter-spacing:-2px;
+	font-weight:800;
 }
 
 .btn:hover p{
 	padding-top:48px;
 	transform:scale(1.2);
 	color:#f1f1f1;
-	font-weight:800;
+	font-weight:900;
 }
 
 .btn::before{
