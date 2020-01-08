@@ -2,8 +2,6 @@
 /* reset.css */
 html,body{width:100%;height:100%;}
 
-a{text-decoration:none;}
-
 body,div,dl,dt,dd,ul,li,ol,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,table,hr
 address,header,footer,nav,article,figure,figcaption{margin:0;padding:0;}
 
@@ -39,3 +37,5 @@ color: #fff;
 font-size: 120%; 
 width: 100%;
 text-align: center;  }
+
+a{text-decoration:none;}

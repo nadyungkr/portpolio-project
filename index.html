@@ -2,12 +2,13 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title></title>
-	<link rel="stylesheet" href="box.css">
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Nanum+Gothic&display=swap">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-
+	<title></title>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link rel="stylesheet" href="main.css"/>
+	<link rel="stylesheet" href="reset.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Nanum+Gothic&display=swap"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"/>
 </head>
 <body>
 <div id="skipNav">
@@ -17,8 +18,8 @@
 		<nav id="gnb">
 			<ul>
 				<li><a href="#a2">Skills</a></li>
-				<li><a href="#a3">Design &amp; Story</a></li>
-				<li><a href="#a4">Project</a></li>
+				<li><a href="#a3">Project 1</a></li>
+				<li><a href="#a4">Project 2</a></li>
 				<li><a href="#a5">Git</a></li>
 			</ul>
 		</nav>
@@ -26,13 +27,13 @@
 	<main>
 		<section class="Hello">
 			<div class="inner">
-				<div class="box">A
-					<h2>Hello <span>!</span> <br/> I<span>'</span> m a Web Publisher <span>.</span></h2>
-					<p>She tells him "Oh, love, no one's ever gonna hurt you, love<br/>
+				<div class="box">
+					<h2 data-aos="fade-up">Hello <span>!</span> <br/> I<span>'</span> m a Web Publisher <span>.</span></h2>
+					<p data-aos="fade-up">She tells him "Oh, love, no one's ever gonna hurt you, love<br/>
 						I'm gonna give you all of my love. Nobody matters like you"<br/>
 					<br/>
 						"You're gonna grow and have a good life"</p>
-					<p>
+					<p data-aos="fade-up">
 					슬퍼하는 이름과 우는 어머니, 까닭입니다. 그러나 계절이 강아지, 같이 무덤 패, 슬퍼하는 듯합니다. 
 					<br/>
 					가을 별 이름을 사랑과 계십니다. 별 나의 밤이 패, 이름과, 별을 마디씩 쓸쓸함과 있습니다.
@@ -42,63 +43,57 @@
 		</section>
 		<section class="skill_content" id="a2">
 			<div class="inner">
-				<h2>Design <span>&amp;</span> Coding Skills</h2>
+				<h2 class="headline" data-aos="fade-up">Design <span>&amp;</span> Coding Skills</h2>
 				<div class="skill_flexbox">
-					<div><!--html box-->
-							<h3>HTML</h3>
-							<div><!--하얀색 배경-->
+					<div class="homebox" data-aos="fade-up"><!--illustration box-->
+							<h3>HTML<span>90%</span></h3>
+							<div class="whitebar"><!--하얀색 배경-->
 								<div>
-									<span>90%</span>
-								</div> <!--bar//bar:after=동그란모양-->
+								</div>
 							</div>
 							<p>국가는 농수산물의 수급균형과 유통구조의 개선에 노력하여 가격안정을 도모함으로써 농·어민의 이익을 보호한다. 
 								정당은 그 목적·조직과 활동이 민주적이어야 하며, 국민의 정치적 의사형성에 참여하는데 필요한 조직을 가져야 한다.</p>
 					</div>
-					<div><!--css box-->
+					<div class="homebox" data-aos="fade-up"><!--css box-->
 							<h3>CSS3</h3>
-							<div>
+							<div class="whitebar">
 								<div>
-									<span>90%</span>
 								</div>
 							</div>
 							<p>국가는 농수산물의 수급균형과 유통구조의 개선에 노력하여 가격안정을 도모함으로써 농·어민의 이익을 보호한다. 
 								정당은 그 목적·조직과 활동이 민주적이어야 하며, 국민의 정치적 의사형성에 참여하는데 필요한 조직을 가져야 한다.</p>
 					</div>
-					<div><!--git box-->
+					<div class="homebox" data-aos="fade-up"><!--git box-->
 							<h3>Git</h3>
-							<div>
+							<div class="whitebar">
 								<div>
-									<span>90%</span>
 								</div>
 							</div>
 							<p>국가는 농수산물의 수급균형과 유통구조의 개선에 노력하여 가격안정을 도모함으로써 농·어민의 이익을 보호한다. 
 								정당은 그 목적·조직과 활동이 민주적이어야 하며, 국민의 정치적 의사형성에 참여하는데 필요한 조직을 가져야 한다.</p>
 					</div>
-					<div><!--javascript box-->
+					<div class="homebox" data-aos="fade-up"><!--javascript box-->
 							<h3>javascript</h3>
-							<div>
+							<div class="whitebar">
 								<div>
-									<span>90%</span>
 								</div>
 							</div>
 							<p>국가는 농수산물의 수급균형과 유통구조의 개선에 노력하여 가격안정을 도모함으로써 농·어민의 이익을 보호한다. 
 								정당은 그 목적·조직과 활동이 민주적이어야 하며, 국민의 정치적 의사형성에 참여하는데 필요한 조직을 가져야 한다.</p>
 					</div>
-					<div><!--photoshop box-->
+					<div class="homebox" data-aos="fade-up"v><!--photoshop box-->
 							<h3>Photoshop</h3>
-							<div>
+							<div class="whitebar">
 								<div>
-									<span>90%</span>
 								</div>
 							</div>
 							<p>국가는 농수산물의 수급균형과 유통구조의 개선에 노력하여 가격안정을 도모함으로써 농·어민의 이익을 보호한다. 
 								정당은 그 목적·조직과 활동이 민주적이어야 하며, 국민의 정치적 의사형성에 참여하는데 필요한 조직을 가져야 한다.</p>
 					</div>
-					<div><!--illustration box-->
+					<div class="homebox" data-aos="fade-up"><!--illustration box-->
 							<h3>Illustration</h3>
-							<div>
+							<div class="whitebar">
 								<div>
-									<span>90%</span>
 								</div>
 							</div>
 							<p>국가는 농수산물의 수급균형과 유통구조의 개선에 노력하여 가격안정을 도모함으로써 농·어민의 이익을 보호한다. 
@@ -109,21 +104,21 @@
 		</section>
 			<section class="portpolio_content" id="a3">
 				<div class="portpolio p1">
-					<a href="dat21/dat21.html" class="btn">
+					<a href="#" class="btn">
 						<p>DA<br/>Technology</p>
-						<span></span>
+						<span class="arrow ar1"></span>
 					</a>
 				</div>
 				<div class="portpolio p2">
-					<a href="lol/lol.html" class="btn">
+					<a href="#" class="btn">
 						<p>League<br/>of Legends</p>
-						<span></span>
+						<span class="arrow ar2"></span>
 					</a>
 				</div>
 				<div class="portpolio p3">
-					<a href="mnh/mnh.html" class="btn">
+					<a href="#" class="btn">
 						<p>MNH<br/>Entertainment</p>
-						<span></span>
+						<span class="arrow ar3"></span>
 					</a>
 				</div>
 			</section>
@@ -133,8 +128,11 @@
 				<div class="portpolio2 c3"></div>
 				<div class="portpolio2 c4"></div>
 			</section>
-	</main>
+		</main>
 	<footer>
 	</footer>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
