@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:13px;
+}
+
+.section1 {
+    background-color: #7DBCD4;
+}
+
+.section2 {
+    background-color: #98C19F; 
+}
+
+.section3 {
+    background-color:  #A199E2;
+}
+
+.section4 {
+    background-color:  #CC938E;
+}
+
+.section5 {
+    background-color:  #D2C598;
+}
+        
+section div {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+    top: 50%;  
+    transform: translateY(-50%);
+    width:100%;
+    height:100%;
+}
+
+section div p{
+    font-size: 22px;
+    color: #fff;
+    margin:0;
+    padding:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+}
