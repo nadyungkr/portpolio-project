@@ -11,14 +11,160 @@ header{
     z-index:9;
 }
 
-header h1 img{
-    height:80px;
-    width:auto;
+header h1{
+    font-size:40px;
+    text-align:center;
+    line-height:100px;
+}
+
+header h1 a{
+    color:#fff;
+    text-decoration: none;
+}
+
+#wrapper {
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:5%;
+    display:none;
+}
+
+.init {
+    animation:none !important;
+}
+  
+.line {
+    background:#ffffff;
+    margin-top:6px;
+    margin-bottom:6px;
+    width:56px;
+    height:7px; 
+    border-radius:2px;
+    box-shadow:0 1px 3px rgba(0,0,0,.5);
+    position:relative;
+}
+  
+.line-top {
+    animation:line-top .5s forwards ease-out,
+              line-top-rotate .3s .5s forwards ease-out;
+}
+  
+ 
+.top-reverse {
+    animation:line-top-rotate-reverse .3s forwards ease-out,
+              line-top-reverse .5s .3s forwards ease-out;
+}
+  
+.line-mid {
+    animation:line-mid .5s forwards ease-out;
+  }
+  
+
+.mid-reverse {
+    animation:line-mid-invisible .3s forwards ease-out, 
+              line-mid-reverse .5s .3s forwards ease-out;
+}
+  
+.line-bot {
+    animation:line-bot .5s forwards ease-out,
+              line-bot-rotate .3s .5s forwards ease-out;
+}
+  
+
+.bot-reverse {
+    animation:line-bot-rotate-reverse .3s forwards ease-out,
+              line-bot-reverse .5s .3s forwards ease-out;
+}
+  
+@keyframes line-top {
+    0% {transform:translateY(0px)}
+    100% {transform:translateY(13px)}
+}
+  
+
+@keyframes line-top-reverse {
+    0% {transform:translateY(13px)}
+    100% {transform:translateY(0px)}
+}
+  
+@keyframes line-top-rotate {
+    0% {transform:translateY(13px) rotateZ(0deg)}
+    100% {transform:translateY(13px) rotateZ(45deg)}
+}
+  
+
+@keyframes line-top-rotate-reverse {
+    0% {transform:translateY(13px) rotateZ(45deg)}
+    100% {transform:translateY(13px) rotateZ(0deg)}
+}
+  
+@keyframes line-mid {
+    0% {transform:scale(1)}
+    100% {transform:scale(0)}
+}
+  
+
+@keyframes line-mid-reverse {
+    0% {transform:scale(0)}
+    100% {transform:scale(1)}
+}
+  
+@keyframes line-mid-invisible {
+    0% {transform:scale(0)}
+    100% {transform:scale(0)}
+}
+  
+@keyframes line-bot {
+    0% {transform:translateY(0px)}
+    100% {transform:translateY(-13px)}
+}
+  
+  
+@keyframes line-bot-reverse {
+    0% {transform:translateY(-13px)}
+    100% {transform:translateY(0px)}
+}
+  
+@keyframes line-bot-rotate {
+    0% {transform:translateY(-13px) rotateZ(0deg)}
+    100% {transform:translateY(-13px) rotateZ(135deg)}
+}
+  
+  
+@keyframes line-bot-rotate-reverse {
+    0% {transform:translateY(-13px) rotateZ(135deg)}
+    100% {transform:translateY(-13px) rotateZ(0deg)}
+}
+/*menu 완성*/
+
+header nav {
+    display:none;
+    position:absolute;
+    top:0;
+    right:8%;
+}
+
+header nav ul li{
+    display:inline-block;
+    line-height:100px;
+    font-size:20px;
+    padding:0 10px;
+}
+
+header nav ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.tb{
+    display:none;
 }
 
 /*main 분기*/
 .section1 {
-    background-color: #222;
+    background:linear-gradient(rgba(34,34,34,.9),rgba(34,34,34,.9)),url(../images/ndkey.jpg) 50% 50% no-repeat;
+    background-size: cover;
 }
 
 .section2 {
@@ -37,14 +183,16 @@ header h1 img{
     background-color:  #222;
 }
 
-/*1section div*/
+/*section 공통*/
 section div {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     width:100%;
     height:100%;
 }
+/*section 공통 끝*/
 
+/*섹션 1 시작*/
 .section1 div div {
     width:60%;
     height:auto;
@@ -82,6 +230,13 @@ section div {
         height:120px;
         background:blue;
     }
+    header h1{
+        line-height: 120px;
+        font-size: 44px;
+    }
+    #wrapper{
+        display:block;
+    }
     /*section 1 chapter*/
     .section1 div div{
         top:25%;
@@ -105,6 +260,13 @@ section div {
     header {
         height:120px;
         background:peru;
+    }
+    header h1{
+        line-height: 120px;
+        font-size: 50px;
+    }
+    #wrapper{
+        display:block;
     }
     /*section 1 chapter*/
     .section1 div div{
@@ -130,6 +292,13 @@ section div {
     header {
         height:100px;
         background:yellow;
+    }
+    header h1{
+        line-height: 100px;
+        font-size: 44px;
+    }
+    #wrapper{
+        display:block;
     }
      /*section 1 chapter*/
     .section1 div div{
@@ -179,6 +348,19 @@ section div {
         height:100px;
         background:palegreen;
     }
+    header h1{
+        line-height: 100px;
+        font-size: 50px;
+        text-align: left;
+        text-indent:8%;
+    }
+    #wrapper{
+        display:none;
+    }
+    header nav{
+        display:block;
+    }
+
     .section1 div div{
         top:25%;
         width:85%;
