@@ -1,5 +1,44 @@
 var headLine = new Array();
 
+headLine[0] = "Web Publisher";
+headLine[1] = "Front-end Developer";
+headLine[2] = "Park Hyeon Jeong";
+var i = 0;
+var j = 0;
+var speed = 150;
+var check = true;
+
+window.onload = typing();
+
+function typing()
+{
+
+   if(i <= headLine[j].length + 1)
+   {
+      document.getElementById("autoType").innerHTML =
+         headLine[j].substring(0,i);
+      
+      if(check) i++;
+      if(!check) i--;
+      
+      setTimeout(typing,speed);   
+      
+      if(i == headLine[j].length + 1)
+         check = false;
+
+      if(i == 0){
+         check = true;
+         j++;
+         
+         if(j==3) 
+            j = 0;
+      }
+   }
+}   
+
+
+/*var headLine = new Array();
+
 headLine[0] = "UI/UX Web Publisher  ";
 headLine[1] = " "; 
 headLine[2] = "Front-end Developer  ";
@@ -43,4 +82,4 @@ function minus_typing() {
                 }
         }
     }
-}
+}*/
