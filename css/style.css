@@ -1,6 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size:13px;
+    color:#fff;
 }
 
 header{
@@ -9,6 +10,7 @@ header{
     left:0;
     width:100%;
     z-index:9;
+    opacity:.01;
 }
 
 header h1{
@@ -168,11 +170,11 @@ header nav ul li a{
 }
 
 .section2 {
-    background-color: #111; 
+    background-color: #2A2A2C;
 }
 
 .section3 {
-    background-color:  #333;
+    background-color:  #222;
 }
 
 .section4 {
@@ -180,31 +182,46 @@ header nav ul li a{
 }
 
 .section5 {
-    background-color:  #222;
+    background-color:  #333;
 }
 
 /*section 공통*/
 section div {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    width:100%;
-    height:100%;
+    /**/
 }
 /*section 공통 끝*/
 
 /*섹션 1 시작*/
+.section1 div {
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+
 .section1 div div {
     width:60%;
     height:auto;
     min-height:120px;
-    border:10px solid #fff;
+    border:6px solid #fff;
     text-align: center;
     margin:0 auto;
     position: relative;
     top:15%;
 }
 
-.section1 div h2{
+.section1 div div p{
+    background:url(../images/search.png) no-repeat;
+    background-size:contain;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    right:3%;
+    z-index:4;
+}
+
+.section1 div div h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     font-weight: 800;
@@ -223,6 +240,17 @@ section div {
     width:5%;
     height:auto;
 }
+
+/*section1 완성*/
+
+/* section2 */
+.section2 h2{
+    font-size:60px;
+    text-align:center;
+    padding-top:2%;
+}
+
+/*section2 완성*/
 
 /*phones*/
 @media only screen and (max-width: 480px){
@@ -246,7 +274,10 @@ section div {
     .section1 div .profile{
         top:25%;
     }
-    .section1 div h2{
+    .section1 div div p{
+        display:none;
+    }
+    .section1 div div h2{
         font-size:40px;
         letter-spacing: -1px;
     }
@@ -274,12 +305,15 @@ section div {
         width:70%;
         min-height:260px;
     }
+    .section1 div div p{
+        display:none;
+    }
+    .section1 div div h2{
+        font-size:50px;
+    }
     .section1 div .profile{
         top:28%;
         left:18%;
-    }
-    .section1 div h2{
-        font-size:50px;
     }
     .section1 div .profile img{
         width:40%;
@@ -310,7 +344,10 @@ section div {
         top:22%;
         left:25%;
     }
-    .section1 div h2{
+    .section1 div div p{
+        display:none;
+    }
+    .section1  div div h2{
         font-size:70px;
         font-weight: 900;
     }
@@ -330,12 +367,15 @@ section div {
         top:22%;
         width:75%;
     }
+    .section1 div div p{
+        display:none;
+    }
+    .section1 div div h2{
+        font-size:80px;
+    }
     .section1 div .profile{
         top:22%;
         left:25%;
-    }
-    .section1 div h2{
-        font-size:80px;
     }
     .section1 div .profile img{
         width:30%;
@@ -360,18 +400,20 @@ section div {
     header nav{
         display:block;
     }
-
     .section1 div div{
         top:25%;
-        width:85%;
+        width:80%;
         min-height:120px;
+    }
+    .section1 div div p{
+        display:block;
+    }
+    .section1 div div h2{
+        font-size:90px;
     }
     .section1 div .profile{
         top:25%;
         left:30%;
-
-    }.section1 div h2{
-        font-size:90px;
     }
     .section1 div .profile img{
         width:25%;
