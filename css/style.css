@@ -244,11 +244,69 @@ section div {
 /*section1 완성*/
 
 /* section2 */
-.section2 h2{
-    font-size:60px;
-    text-align:center;
-    padding-top:2%;
+.section2{
+    font-size:1.1rem;
 }
+
+.section2 h2{
+    padding:2% 0;
+    font-size:4.615rem;
+    text-align:center;
+}
+
+.section2 .profile_container{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section2 .prodiv{
+    width:45%;
+    outline:1px solid red;
+    display:flex;
+    flex-flow:row wrap;
+    align-items:flex-start;
+}
+
+.section2 h3{
+    width:100%;
+    outline:1px solid green;
+}
+
+.profile_hj .imgcontainer{
+    width:30%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile_hj img{
+    width:80%;
+    height:auto;
+    border-radius: 50%;
+    padding:2%;
+    border:1px solid #eee;
+}
+
+.profile_hj .hj{
+    display: inline-block;
+}
+
+.profile_hj .hj li{
+    padding-bottom:5%;
+    text-indent: 2rem;
+}
+
+.profile_hj .ch{
+    padding:2% 0;
+}
+
+.profile_hj .ch li{
+    list-style-type: initial;
+    text-indent: 4rem;
+    padding:1% 0;
+}
+
 
 /*section2 완성*/
 
