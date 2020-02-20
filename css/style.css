@@ -10,13 +10,14 @@ header{
     left:0;
     width:100%;
     z-index:9;
-    opacity:.01;
+    opacity:.1;
 }
 
 header h1{
-    font-size:40px;
-    text-align:center;
-    line-height:100px;
+    font-size:3.076rem;
+    text-align:right;
+    padding-right:2rem;
+    line-height:7.692rem;
 }
 
 header h1 a{
@@ -149,9 +150,9 @@ header nav {
 
 header nav ul li{
     display:inline-block;
-    line-height:100px;
-    font-size:20px;
-    padding:0 10px;
+    line-height:7.692rem;
+    font-size:1.538rem;
+    padding:0 0.769rem;
 }
 
 header nav ul li a{
@@ -186,9 +187,7 @@ header nav ul li a{
 }
 
 /*section 공통*/
-section div {
-    /**/
-}
+
 /*section 공통 끝*/
 
 /*섹션 1 시작*/
@@ -201,7 +200,7 @@ section div {
 .section1 div div {
     width:60%;
     height:auto;
-    min-height:120px;
+    min-height:9.230rem;
     border:6px solid #fff;
     text-align: center;
     margin:0 auto;
@@ -212,8 +211,8 @@ section div {
 .section1 div div p{
     background:url(../images/search.png) no-repeat;
     background-size:contain;
-    width:50px;
-    height:50px;
+    width:3rem;
+    height:3rem;
     position:absolute;
     top:50%;
     transform:translateY(-50%);
@@ -223,11 +222,11 @@ section div {
 
 .section1 div div h2{
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
+    font-size: 3.076rem;
     font-weight: 800;
     color: #fff;
     letter-spacing:1px;
-    line-height:120px;
+    line-height:9.23rem;
 }
 
 .section1 div .profile{
@@ -245,12 +244,13 @@ section div {
 
 /* section2 */
 .section2{
-    font-size:1.1rem;
+    font-size:.9rem;
 }
 
 .section2 h2{
-    padding:2% 0;
-    font-size:4.615rem;
+    padding-top:1.5rem;
+    padding-bottom:1rem;
+    font-size:3.076rem;
     text-align:center;
 }
 
@@ -263,19 +263,25 @@ section div {
 
 .section2 .prodiv{
     width:45%;
-    outline:1px solid red;
     display:flex;
     flex-flow:row wrap;
     align-items:flex-start;
+    outline:1px solid red;
+}
+
+.profile_hj{
+    order:-1;
 }
 
 .section2 h3{
+    color:rgb(134, 134, 50);
+    font-size:1rem;
     width:100%;
-    outline:1px solid green;
+    margin-bottom:.8rem;
 }
 
 .profile_hj .imgcontainer{
-    width:30%;
+    width:34%;
     display: flex;
     justify-content: center;
 }
@@ -290,11 +296,12 @@ section div {
 
 .profile_hj .hj{
     display: inline-block;
+    outline:1px solid red;
 }
 
 .profile_hj .hj li{
-    padding-bottom:5%;
-    text-indent: 2rem;
+    padding-bottom:.5rem;
+    text-indent: 2.2rem;
 }
 
 .profile_hj .ch{
@@ -303,22 +310,99 @@ section div {
 
 .profile_hj .ch li{
     list-style-type: initial;
-    text-indent: 4rem;
-    padding:1% 0;
+    text-indent: 2rem;
+    padding:.5rem 0;
 }
 
+.profile_ed{
+    order:1;
+}
+
+.profile_ed li{
+    display:inline-block;
+    font-weight:400;
+    padding:0 1rem;
+    margin:1rem 0;
+}
+
+.profile_ed li:nth-child(2){
+    margin:0 1rem;
+}
+
+.profile_ed li p:nth-child(2){
+    font-size:1rem;
+}
+
+.profile_ed li span{
+    font-size:.9rem;
+    color:#ddd;
+}
+
+.profile_skill{
+    order:-1;
+}
+
+.profile_skill li{
+    padding:.5rem 0;
+    list-style-type:initial;
+    text-indent:4rem;
+}
+
+.profile_skb{
+    order:2;
+}
+
+.profile_skb .skill_bar {
+    width:100%;
+}
+
+.profile_skb .skill_bar li{
+    margin-left:2.8rem;
+    width:80%;
+    height:2rem;
+}
+
+.profile_skb .skill_bar li p{
+    font-size:.8rem;
+}
+
+.profile_skb .skill_bar li .bbasic{
+    width:100%;
+    height:.4rem;
+    background:#ddd;
+    position: relative;
+}
+
+.profile_skb .skill_bar li .bbasic .bmove{
+    height:.4rem;
+    background:#333;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.profile_skb .skill_bar li:first-child .bmove{
+    width:90%;
+}
+
+.profile_skb .skill_bar li:nth-child(2) .bmove{
+    width:80%;
+}
+
+.profile_skb .skill_bar li:last-child .bmove{
+    width:90%;
+}
 
 /*section2 완성*/
 
 /*phones*/
 @media only screen and (max-width: 480px){
     header {
-        height:120px;
+        height:7.692rem;
         background:blue;
     }
     header h1{
-        line-height: 120px;
-        font-size: 44px;
+        line-height: 7.692rem;
     }
     #wrapper{
         display:block;
@@ -326,33 +410,61 @@ section div {
     /*section 1 chapter*/
     .section1 div div{
         top:25%;
-        width:68%;
-        min-height:260px;
+        width:80%;
+        min-height:9.23rem;
+        border:4px solid #fff;
     }
     .section1 div .profile{
         top:25%;
+        left:22%;
     }
     .section1 div div p{
         display:none;
     }
     .section1 div div h2{
-        font-size:40px;
-        letter-spacing: -1px;
+        font-size:2rem;
+        letter-spacing:-.1rem;
     }
     .section1 div .profile img{
-        width:40%;
+        width:35%;
+    }
+    
+    .section2 .prodiv{
+        width:90%;
+        display:flex;
+        flex-flow:row wrap;
+        align-items:flex-start;
+        outline:1px solid red;
+    }
+    .section2 .prodiv:nth-child(3){
+        display:none;
+    }
+    .section2 h3{
+        color:rgb(134, 134, 50);
+        font-size:1rem;
+        width:100%;
+        margin-bottom:0;
+    }
+    .profile_hj .hj li{
+        padding-bottom:.5rem;
+        text-indent:4rem;
+    }
+    .profile_hj img{
+        margin-left:2rem;
+        width:100%;
+    }
+    .profile_ed li:first-child{
+        display:none;
+    }
+    .profile_ed li:nth-child(2){
+        margin:0;
     }
      
 }
 
 @media only screen and (min-width: 480px) and (max-width: 600px){
     header {
-        height:120px;
         background:peru;
-    }
-    header h1{
-        line-height: 120px;
-        font-size: 50px;
     }
     #wrapper{
         display:block;
@@ -361,33 +473,57 @@ section div {
     .section1 div div{
         top:28%;
         width:70%;
-        min-height:260px;
+        min-height:20rem;
     }
     .section1 div div p{
         display:none;
     }
     .section1 div div h2{
-        font-size:50px;
+        font-size:3.2rem;
     }
     .section1 div .profile{
         top:28%;
-        left:18%;
+        left:22%;
     }
     .section1 div .profile img{
-        width:40%;
+        width:34%;
     }
-     
+    .section2 .prodiv{
+        width:90%;
+        display:flex;
+        flex-flow:row wrap;
+        align-items:flex-start;
+        outline:1px solid red;
+    }
+    .section2 .prodiv:nth-child(3){
+        display:none;
+    }
+    .section2 h3{
+        color:rgb(134, 134, 50);
+        font-size:1rem;
+        width:100%;
+        margin-bottom:0;
+    }
+    .profile_hj .hj li{
+        padding-bottom:.5rem;
+        text-indent:4rem;
+    }
+    .profile_hj img{
+        margin-left:2rem;
+        width:100%;
+    }
+    .profile_ed li:first-child{
+        display:none;
+    }
+    .profile_ed li:nth-child(2){
+        margin:0;
+    }
 }
 
 /*portrait tablets and large phones*/
 @media only screen and (min-width: 600px){
     header {
-        height:100px;
         background:yellow;
-    }
-    header h1{
-        line-height: 100px;
-        font-size: 44px;
     }
     #wrapper{
         display:block;
@@ -395,8 +531,8 @@ section div {
      /*section 1 chapter*/
     .section1 div div{
         top:22%;
-        width:80%;
-        min-height:260px;
+        width:70%;
+        min-height:20rem;
     }
     .section1 div .profile{
         top:22%;
@@ -406,30 +542,51 @@ section div {
         display:none;
     }
     .section1  div div h2{
-        font-size:70px;
-        font-weight: 900;
+        font-size:4.3rem;
+        letter-spacing:-.1rem;
     }
     .section1 div .profile img{
-        width:34%;
+        width:30%;
     }
- 
+    .profile_hj .hj li{
+        padding-bottom:.5rem;
+        text-indent:.7rem;
+    }
+    .profile_hj img{
+        width:100%;
+    }
+    .profile_hj .ch li{
+        list-style:none;
+        padding-bottom:0;
+        text-indent:.7rem;
+        letter-spacing:-.1rem;
+    }
+    .profile_ed li:first-child{
+        display:none;
+    }
+    .profile_ed li:nth-child(2){
+        margin:0;
+    }
+    .profile_skill li{
+        text-indent:2rem;
+    }
 }
 /*landscape tablets*/
 @media only screen and (min-width:768px){
     header {
-        height:100px;
         background:red;
     }
      /*section 1 chapter*/
     .section1 div div{
         top:22%;
         width:75%;
+        min-height:9.23rem;
     }
     .section1 div div p{
         display:none;
     }
     .section1 div div h2{
-        font-size:80px;
+        font-size:3.3rem;
     }
     .section1 div .profile{
         top:22%;
@@ -438,17 +595,20 @@ section div {
     .section1 div .profile img{
         width:30%;
     }
+    .profile_hj img{
+        width:100%;
+    }
+    .profile_ed li:nth-child(2){
+        margin:0;
+    }
   
 }
 /*laptops/desktops, 992px ~*/
 @media only screen and (min-width:992px) {
     header{
-        height:100px;
         background:palegreen;
     }
     header h1{
-        line-height: 100px;
-        font-size: 50px;
         text-align: left;
         text-indent:8%;
     }
@@ -461,13 +621,13 @@ section div {
     .section1 div div{
         top:25%;
         width:80%;
-        min-height:120px;
+        min-height:9.23rem;
     }
     .section1 div div p{
         display:block;
     }
     .section1 div div h2{
-        font-size:90px;
+        font-size:4.4rem;
     }
     .section1 div .profile{
         top:25%;

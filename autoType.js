@@ -1,6 +1,6 @@
 var headLine = new Array();
 
-headLine[0] = "Web Publisher";
+headLine[0] = "Web ♥ Publisher";
 headLine[1] = "Front-end Developer";
 headLine[2] = "Park Hyeon Jeong";
 var i = 0;
