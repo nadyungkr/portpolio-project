@@ -141,29 +141,6 @@ header h1 a{
 }
 /*menu 완성*/
 
-header nav {
-    display:none;
-    position:absolute;
-    top:0;
-    right:8%;
-}
-
-header nav ul li{
-    display:inline-block;
-    line-height:7.692rem;
-    font-size:1.538rem;
-    padding:0 0.769rem;
-}
-
-header nav ul li a{
-    color:#fff;
-    text-decoration: none;
-}
-
-.tb{
-    display:none;
-}
-
 /*main 분기*/
 .section1 {
     background:linear-gradient(rgba(34,34,34,.9),rgba(34,34,34,.9)),url(../images/ndkey.jpg) 50% 50% no-repeat;
@@ -478,9 +455,6 @@ header nav ul li a{
     header {
         background:peru;
     }
-    #wrapper{
-        display:block;
-    }
     /*section 1 chapter*/
     .section1 div div{
         top:28%;
@@ -532,9 +506,6 @@ header nav ul li a{
 @media only screen and (min-width: 600px){
     header {
         background:yellow;
-    }
-    #wrapper{
-        display:block;
     }
      /*section 1 chapter*/
     .section1 div div{
@@ -621,14 +592,7 @@ header nav ul li a{
     header{
         background:palegreen;
     }
-    header h1{
-        text-align: left;
-        text-indent:8%;
-    }
     #wrapper{
-        display:none;
-    }
-    header nav{
         display:block;
     }
     .section1 div div{
