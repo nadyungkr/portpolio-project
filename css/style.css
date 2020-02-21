@@ -266,7 +266,6 @@ header nav ul li a{
     display:flex;
     flex-flow:row wrap;
     align-items:flex-start;
-    outline:1px solid red;
 }
 
 .profile_hj{
@@ -296,7 +295,6 @@ header nav ul li a{
 
 .profile_hj .hj{
     display: inline-block;
-    outline:1px solid red;
 }
 
 .profile_hj .hj li{
@@ -431,10 +429,6 @@ header nav ul li a{
     
     .section2 .prodiv{
         width:90%;
-        display:flex;
-        flex-flow:row wrap;
-        align-items:flex-start;
-        outline:1px solid red;
     }
     .section2 .prodiv:nth-child(3){
         display:none;
@@ -447,11 +441,29 @@ header nav ul li a{
     }
     .profile_hj .hj li{
         padding-bottom:.5rem;
-        text-indent:4rem;
+        text-indent:1rem;
+        font-size:.9rem;
+    }
+    .profile_hj .hj li:nth-child(4),.profile_hj .hj li:nth-child(5),.profile_hj .hj li:last-child{
+        display:none;
     }
     .profile_hj img{
-        margin-left:2rem;
-        width:100%;
+        margin-left:0;
+        width:80%;
+        border:none;
+    }
+    .profile_hj .ch li{
+        letter-spacing: -.1rem;
+
+    }
+    .profile_ed li{
+        font-size:.8rem;
+        padding:0 .2rem;
+        display: block;
+        text-indent:2rem;
+    }
+    .profile_ed li p, .profile_ed li span{
+        font-size:.8rem;
     }
     .profile_ed li:first-child{
         display:none;
@@ -490,10 +502,6 @@ header nav ul li a{
     }
     .section2 .prodiv{
         width:90%;
-        display:flex;
-        flex-flow:row wrap;
-        align-items:flex-start;
-        outline:1px solid red;
     }
     .section2 .prodiv:nth-child(3){
         display:none;
@@ -556,10 +564,9 @@ header nav ul li a{
         width:100%;
     }
     .profile_hj .ch li{
-        list-style:none;
-        padding-bottom:0;
-        text-indent:.7rem;
+        list-style-type:initial;
         letter-spacing:-.1rem;
+        text-indent:1rem;
     }
     .profile_ed li:first-child{
         display:none;
@@ -595,11 +602,17 @@ header nav ul li a{
     .section1 div .profile img{
         width:30%;
     }
-    .profile_hj img{
-        width:100%;
+    .profile_hj .hj li{
+        padding:.5rem 0;
+        text-indent:2rem;
     }
-    .profile_ed li:nth-child(2){
-        margin:0;
+    .profile_hj .ch li{
+        list-style-type:initial;
+        letter-spacing:normal;
+        text-indent:2rem;
+    }
+    .profile_ed li:first-child{
+        display:inline-block;
     }
   
 }
@@ -635,6 +648,24 @@ header nav ul li a{
     }
     .section1 div .profile img{
         width:25%;
+    }
+    .profile_hj .hj li{
+        padding:.5rem 0;
+        text-indent:4rem;
+    }
+    .profile_hj .ch li{
+        list-style-type:initial;
+        letter-spacing:normal;
+        text-indent:2rem;
+    }
+    .profile_ed li:first-child{
+        display:inline-block;
+    }
+    .profile_ed li:nth-child(2){
+        margin:0;
+    }
+    .profile_skill li{
+        text-indent:4rem;
     }
     
 }
