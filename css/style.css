@@ -251,13 +251,14 @@ header h1 a{
 
 .section2 h3{
     color:rgb(134, 134, 50);
-    font-size:1rem;
+    font-size:18px;
     width:100%;
-    margin-bottom:.8rem;
+    margin-top:40px;
+    margin-bottom:20px;
 }
 
 .profile_hj .imgcontainer{
-    width:34%;
+    width:300px;
     display: flex;
     justify-content: center;
 }
@@ -266,27 +267,31 @@ header h1 a{
     width:80%;
     height:auto;
     border-radius: 50%;
-    padding:2%;
+    padding:10px;
     border:1px solid #eee;
 }
 
 .profile_hj .hj{
     display: inline-block;
+    outline:1px solid red;
+    margin-left:50px;
 }
 
 .profile_hj .hj li{
-    padding-bottom:.5rem;
-    text-indent: 2.2rem;
+    font-size:16px;
+    margin-bottom:10px;
 }
 
 .profile_hj .ch{
-    padding:2% 0;
+    margin-top:20px;
+    outline:1px solid red;
 }
 
 .profile_hj .ch li{
     list-style-type: initial;
-    text-indent: 2rem;
-    padding:.5rem 0;
+    font-size:16px;
+    text-indent: 10px;
+    margin:20px 0;
 }
 
 .profile_ed{
@@ -296,20 +301,20 @@ header h1 a{
 .profile_ed li{
     display:inline-block;
     font-weight:400;
-    padding:0 1rem;
-    margin:1rem 0;
+    padding:0 30px;
+    font-size:16px;
 }
 
 .profile_ed li:nth-child(2){
-    margin:0 1rem;
+    margin:0 18px;
 }
 
 .profile_ed li p:nth-child(2){
-    font-size:1rem;
+    font-size:16px;
 }
 
 .profile_ed li span{
-    font-size:.9rem;
+    font-size:16px;
     color:#ddd;
 }
 
@@ -318,9 +323,10 @@ header h1 a{
 }
 
 .profile_skill li{
-    padding:.5rem 0;
+    font-size:16px;
+    padding:16px 0;
     list-style-type:initial;
-    text-indent:4rem;
+    text-indent:20px;
 }
 
 .profile_skb{
@@ -332,24 +338,32 @@ header h1 a{
 }
 
 .profile_skb .skill_bar li{
-    margin-left:2.8rem;
+    margin-left:40px;
     width:80%;
-    height:2rem;
+    height:30px;
+}
+
+.skill_bar li{
+    padding:10px 0;
+}
+
+.skill_bar li:first-child{
+    padding-top:0;
 }
 
 .profile_skb .skill_bar li p{
-    font-size:.8rem;
+    font-size:16px;
 }
 
 .profile_skb .skill_bar li .bbasic{
     width:100%;
-    height:.4rem;
+    height:16px;
     background:#ddd;
     position: relative;
 }
 
 .profile_skb .skill_bar li .bbasic .bmove{
-    height:.4rem;
+    height:16px;
     background:#333;
     position: absolute;
     top:0;
@@ -397,8 +411,8 @@ header h1 a{
         display:none;
     }
     .section1 div div h2{
-        font-size:2rem;
-        letter-spacing:-.1rem;
+        font-size:26px;
+        letter-spacing:-1.3px;
     }
     .section1 div .profile img{
         width:35%;
