@@ -3,147 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="박현정" author="박현정의 포트폴리오"/>
     <title>박현정의 포트폴리오</title>
-    <link rel="stylesheet" href="css/full-page-scroll.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
-	<header id="header">
-		<h1><a href="#">로고</a></h1>
-		<div id="wrapper">
-			<div id="line-wrapper">
-				<div id="line-top" class="line init top-reverse"></div>
-				<div id="line-mid" class="line init mid-reverse"></div>
-				<div id="line-bot" class="line init bot-reverse"></div>
-			</div>
-		</div>
-	</header>
-    <main id="main" class="scroll-container">
-		<section class="section1">
-			<div>
-				<p class="profile"><img src="images/ndy.png" alt="나듕이 프로필 사진"></p>
-				<div>
-					<p></p>
-					<h2 id="autoType"></h2>
-				</div>
-			</div>
-		</section>
-		<section class="section2">
-			<h2>Profile</h2>
-			<div class="profile_container">
-				<div class="prodiv profile_hj">
-					<h3>프로필</h3>
-					<div class="imgcontainer">
-						<img src="../images/ndme.png" alt="박현정">
-					</div>
-					<ul class="hj">
-						<li>박 현 정</li>
-						<li>웹퍼블리셔/프론트엔드 신입</li>
-						<li>1996.08.06</li>
-						<li>경기도 성남시 분당구</li>
-						<li>010-8894-2242</li>
-						<li>dyungkr@naver.com</li>
-					</ul>
-					<ul class="ch">
-						<li>허물없이 대할 수 있는 인간성</li>
-						<li>열정을 가지고 심혈을 기울이는 노력형</li>
-						<li>신뢰할 수 있는 동료들의 지지자</li>
-						<li>실패를 두려워하지 않는 적극성과 도전성</li>
-					</ul>
-				</div>
-				<div class="prodiv profile_ed">
-					<h3>학력</h3>
-					<ul class="ed">
-						<li>
-							<p>해남고등학교</p>
-							<p>기술과학과정 졸업</p>
-							<p><span>2012.03 - 2015.02</span></p>
-						</li>
-						<li>
-							<p>대전보건대학</p>
-							<p>유아교육과 졸업</p>
-							<p><span>2015.03 - 2018.02</span></p>
-						</li>
-						<li>
-							<p>그린컴퓨터아카데미 성남</p>
-							<p>웹퍼블리셔과정 수료</p>
-							<p><span>2019.09 - 2020.02</span></p>
-						</li>
-					</ul>
-				</div>
-				<div class="prodiv profile_skill">
-					<h3>능력</h3>
-					<ul class="skill">
-						<li>HTML5 웹표준 마크업</li>
-						<li>CSS3/SCSS의 사용경험</li>
-						<li>GTQ 1급 상세페이지, 배너 제작</li>
-						<li>일러스트 활용한 캐릭터, UI 제작</li>
-						<li>반응형/적응형 제작</li>
-						<li>Javascript를 활용한 웹페이지 제작</li>
-						<li>jQuery 플러그인 활용</li>
-						<li>GitHub 원격 저장 활용</li>
-						<li>협업을 위한 커뮤니케이션 능력</li>
-					</ul>
-				</div>
-				<div class="prodiv profile_skb">
-					<h3>스킬</h3>
-					<ul class="skill_bar">
-						<li>
-							<p>HTML &amp; CSS</p>
-							<div class="barwrap">
-								<div class="bbasic">
-									<div class="bmove"><!--90--></div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<p>jQuery &amp; javascript</p>
-							<div class="barwrap">
-								<div class="bbasic">
-									<div class="bmove"><!--80--></div>
-								</div>
-								
-							</div>
-						</li>
-						<li>
-							<p>Photoshop</p>
-							<div class="barwrap">
-								<div class="bbasic">
-									<div class="bmove"><!--90--></div>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-		<section class="section3">
-			<div>
-			</div>
-		</section>
-		<section class="section4">
-			<div>
-			</div>
-		</section>
-		<section class="section5">
-			<div>
-			</div>
-		</section>
-	</main>
-	<footer></footer>
-<script src="full-page-scroll.js"></script>
-<script type="text/javascript">
-		new fullScroll({
-			displayDots: true,
-			dotsPosition: 'left',
-			animateTime: 0.7,
-			animateFunction: 'ease'
-		});
-</script>
-<script src="autoType.js"></script>
-<script src="menu.js"></script>
+    <div id="skipNav">
+        <a href="#main">본문 바로가기</a>
+    </div>
+    <header id="header">
+        <h1><em>PARK</em>HYEONJEONG</h1>
+        <div id="menu" onclick="openNav()">&#9776; <span class="blind">메뉴 열기</span></div>
+    </header>
+    <main id="main">
+    <div id="nav">
+            <ul id="gnb">
+                <li class="closebtn" onclick="closeNav()">&times;<span class="blind">메뉴 닫기</span></li>
+                <li><a href="#section1">HOME</a></li>
+                <li><a href="#section2">PROJECT</a></li>
+                <li><a href="#section3">PROFILE</a></li>
+            </ul>
+    </div>
+    <div id="fullpage">
+        <div class="section s1">
+            <div class="home_bg"></div>
+            <div class="home_container">
+                <h2 class="home_h2">Hello I'm<br/>
+                <span id="autoType"></span></h2>
+                <p class="home_txt">안녕하세요. 프론트엔드 신입 박현정입니다.<br/>
+                    'Creative' 제가 제일 좋아하는 단어에요.<br/>
+                    디자인과 개발은 너무 멋있고 매력적인 직업입니다.
+                </p>
+            </div>
+        </div>
+        <div class="section s2">
+            <div class="slide lol" data-anchor="slide1">
+                <div class="slidewrap">
+                    <div class="slidecontent">
+                        <h2>LEAGUE OF<br/>LEGENDS</h2>
+                        <p>100% 웹퍼블리싱</p>
+                        <p>웹접근성을 높인 적응형 홈페이지</p>
+                        <ul>
+                            <li><a href="#" target="_blank">CODE VIEW</a></li>
+                            <li><a href="#" target="_blank">IMAGE VIEW</a></li>
+                        </ul>
+                        <p class="webpage"><a href="#" target="_blank">WEB PAGE</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide mnh" data-anchor="slide2">
+                <div class="slidewrap">
+                    <div class="slidecontent">
+                        <h2>MNH<br/>ENTERTAINMENT</h2>
+                        <p>100% 웹퍼블리싱</p>
+                        <p>웹접근성을 높인 적응형 홈페이지</p>
+                        <ul>
+                            <li><a href="#" target="_blank">CODE VIEW</a></li>
+                            <li><a href="#" target="_blank">IMAGE VIEW</a></li>
+                        </ul>
+                        <p class="webpage"><a href="#" target="_blank">WEB PAGE</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide dat" data-anchor="slide3">
+                <div class="slidewrap">
+                    <div class="slidecontent">
+                        <h2>DA<br/>TECHNOLOGY</h2>
+                        <p>100% 웹퍼블리싱</p>
+                        <p>웹접근성을 높인 적응형 홈페이지</p<i>
+                        <ul>
+                            <li><a href="#" target="_blank">CODE VIEW</a></li>
+                            <li><a href="#" target="_blank">IMAGE VIEW</a></li>
+                        </ul>
+                        <p class="webpage"><a href="#" target="_blank">WEB PAGE</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide phj" data-anchor="slide4">
+                <div class="slidewrap">
+                    <div class="slidecontent">
+                        <h2>PHJ<br/>PORTPOLIO</h2>
+                        <p>100% 웹퍼블리싱</p>
+                        <p>웹접근성을 높인 반응형 홈페이지</p>
+                        <ul>     
+                            <li><a href="#" target="_blank">CODE VIEW</a></li>
+                            <li><a href="#" target="_blank">IMAGE VIEW</a></li>
+                        </ul>
+                        <p class="webpage"><a href="#" target="_blank">WEB PAGE</a></p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="section s3">
+            <h2>뿡 수정중이지롱</h2>
+        </div>
+    </div>
+    </main>
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.js" integrity="sha256-wypDCQw+qwWtdARZAAtUMv/1SWOEB1XHZwAFoNc9Wn8=" crossorigin="anonymous"></script>
+    <script>
+        new fullpage('#fullpage',{
+            autoScrolling: true,
+            navigation: true,
+            anchors: ['section1','section2','section3'],
+            navigationTooltips: ['HOME', 'PROJECT', 'PROFILE'],
+            showActiveTooltips: true,
+            scrollingSpeed: 1000,
+            controlArrows: true,
+            slidesNavigation: true,
+            sectionsColor: ['#444', '#222', '#444'],
+            css3:true
+
+        })
+
+    </script>
+    <script src="js/menu.js"></script>
 </body>
 </html>

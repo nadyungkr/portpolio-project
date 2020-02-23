@@ -1,0 +1,282 @@
+body {
+    font-family: 'Nanum Gothic',sans-serif;
+    font-size:13px;
+}
+
+/*헤더시작*/
+#header{
+    position:fixed;
+    width:100%;
+    height:80px;
+    top:0;
+    left:0;
+    z-index:10;
+}
+
+#header h1{
+    text-align:center;
+    line-height:80px;
+    font-size:40px;
+}
+
+#header h1 em{
+    font-weight:800;
+}
+
+/*햄버거 아이콘 시작*/ /*openbtn*/
+#menu {
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:1%;
+    z-index: 11;
+    color:#222;
+    text-align:center;
+    line-height: 50px;
+    font-size:40px;
+    cursor: pointer;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background:#fff;
+}
+/*햄버거 끝*/
+/*header 끝*/
+
+/*gnb시작*/
+#gnb{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:12;
+    background: #000;
+    height:100%;
+    width:0;
+    color:#fff;
+    transition: 1s;
+    overflow-x:hidden;
+}
+
+#gnb li{
+    font-size:32px;
+    padding-bottom:50px;
+    text-indent:30px;
+}
+
+#gnb li:first-child{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+#gnb li:nth-child(2){
+    margin-top:120px;
+}
+
+#gnb li a{
+    color:#fff;
+}
+/*gnb끝*/
+
+/*main 시작*/
+/*section1 home 시작*/
+.section.s1{
+    background:url(../images/bgbg2.png) 90% 30% no-repeat;
+    background-size: cover;
+}
+.home_container{
+    margin-left:100px;
+}
+
+.home_h2{
+    font-family: 'Malgun Gothic', sans-serif;
+    font-size:52px;
+    font-weight:800;
+    color:#222;
+}
+
+#autoType:after{
+    content:"|";
+    animation:cursor .7s infinite;
+}
+
+@keyframes cursor{
+    0% {opacity:1;}
+    100% {opacity:0;}
+}/*마우스 커서 깜빡임*/
+
+.home_txt{
+    width:550px;
+    min-width:550px;
+    height:80px;
+    font-size:20px;
+    margin-top:30px;   
+    line-height:1.8; 
+}
+
+/*home 끝*/
+
+/*슬라이드 시작*/
+.slidewrap{
+    width:600px;
+    height:76%;
+    background:rgba(255,255,255,.7);
+    margin-left:50px;
+}
+
+.slidecontent{
+    padding:100px 0 100px 50px;
+    font-size:18px;
+}
+
+.lol{
+    background: url(../images/lol1.jpg)10% 20% no-repeat;
+    background-size:cover;
+	width: 25%;
+    height: 100%;
+}
+
+.mnh{
+    background: url(../images/mnh1.jpg)10% 10% no-repeat;
+    background-size:cover;
+    width:25%;
+    height:100%;
+}
+
+.dat{
+    background: url(../images/dat5.jpg)50% 50% no-repeat;
+    background-size: cover;
+    width:25%;
+    height:100%:
+}
+
+.phj{
+    background: url(../images/phj2.jpg)50% 50% no-repeat;
+    background-size: cover;
+    width:25%;
+    height:100%:
+}
+
+.slidecontent h2{
+    font-weight: 800;
+    font-size:52px;
+    margin:120px 0 5px;
+}
+
+.slidecontent p{
+    padding:6px 0 5px 2px;
+    font-weight: 600;
+}
+
+.slidecontent ul li{
+    width:140px;
+    height:20px;
+    border:2px solid #333;
+    padding:10px;
+    text-align:center;
+    color:#333;
+    border-radius:2px;
+    cursor: pointer;
+    display: inline-block;
+    margin:20px 0 10px 2px;
+    line-height:20px;
+}
+
+.slidecontent a{
+    color:#333;
+    font-weight: 600;
+}
+
+.slidecontent li:hover,.webpage:hover{
+    background:#333;
+    transition:1s;
+}
+
+.slidecontent li:hover a,.webpage:hover a{
+    color:#fff;
+    transition: 1s;
+}
+
+.slidecontent .webpage{
+    width:312px;
+    height:20px;
+    border:2px solid #333;
+    padding:10px;
+    text-align:center;
+    border-radius: 2px;
+    line-height:20px;
+    margin:0 0 200px 2px;
+
+}
+/*슬라이드 끝*/
+
+/*profile 시작*/
+.s3 h2{
+    font-size:100px;
+    text-align: center;
+    color:#fff;
+}
+/*profile 끝*/
+
+
+/*풀페이지 옵션 시작*/
+#fp-nav.fp-right li{
+    /*오른쪽 메뉴 페이저*/
+    margin-bottom:20px !important;
+}
+
+#fp-nav.fp-right li span{
+    background:#fff !important
+}
+
+.fp-slidesNav.fp-bottom{
+    /*슬라이드 네비 페이저*/
+    text-align:center;
+}
+
+.fp-slidesNav.fp-bottom span{
+    background:#fff;
+}
+
+.s2 > .fp-controlArrow.fp-prev,.s2 > .fp-controlArrow.fp-next{
+    /*슬라이드쇼 방향키*/
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:2px solid #333;
+    text-align:center;
+    margin-top:250px;
+    z-index:10;
+}
+
+.s2 > .fp-controlArrow.fp-prev{
+    top:50%;
+    transform:translateY(-50%);
+    left:100px;
+}
+.s2 > .fp-controlArrow.fp-next{
+    transform:translateY(-50%);
+    top:50%;
+    left:160px;
+}
+
+.s2 > .fp-controlArrow.fp-prev:before{
+    content:"\e93d";
+    font-family: xeicon;
+    font-size:20px;
+    line-height:40px;
+    font-weight: 900;
+    color:#333;
+}
+.s2 > .fp-controlArrow.fp-next:before{
+    content:"\e940";
+    font-family: xeicon;
+    font-size:20px;
+    font-weight: 900;
+    line-height:40px;
+    color:#333;
+}
+/*options끝*/

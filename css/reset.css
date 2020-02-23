@@ -1,13 +1,15 @@
 @charset "utf-8";
 /* reset.css */
-html,body{width:100%;height:100%;}
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,
+dfn,em,img,ins,kbd,q,samp,strong,sub,sup,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,
+tbody,tfoot,thead,tr,th,td,summary,small,b,i,article,aside,canvas,details,figcaption,figure,footer,
+header,menu,nav,section,time,mark,audio,video,button{margin:0;padding:0;}
 
-body,div,dl,dt,dd,ul,li,ol,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,table,hr
-address,header,footer,nav,article,figure,figcaption{margin:0;padding:0;}
+article,aside,details,figcaption,figure,footer,header,menu,nav,section,video{display:block;}
 
-table{border-collapse:collapse;}
-main,header,section,nav,footer,aside,article,figure{display:block;}
-img,fieldset{border:none;}
+table{border-collapse:collapse;border-spacing:0;}
+
+img,fieldset{border:0;}
 
 address,caption,cite,code,em,strong,th{font-style:normal;font-weight:normal;}
 
@@ -21,19 +23,15 @@ q:after,q:before{content:"";}
 
 abbr,acronym{border:none;}
 
-label,img,input,select,textarea,button{vertical-align:middle;}
+img,li,input{vertical-align:middle;}
 
 hr{display:none;}
 
-.blind,.hidden{position:absolute;left:0;width:0;height:0;font-size:1;line-height:0;text-indent:-9999px;
-overflow:hidden;}
-#skipNav { margin: 0; padding: 0; }
-#skipNav a { display: block; overflow: hidden; 
-					position: absolute; left: 0; top: -10000px; }
-#skipNav a:hover, #skipNav a:focus, #skipNav a:active { top: 0px; z-index: 1001;
-padding: 15px 0; 
-background-color: #004b9d;
-color: #fff; 
-font-size: 120%; 
-width: 100%;
-text-align: center;  }
+#skipNav,.blind,.hidden{position:absolute;left:0;width:0;height:0;font-size:0;line-height:0;text-indent:-9999px;
+overflow:hidden;visibility:hidden;}
+
+li img, dd img{vertical-align:top;}
+img{max-width:100%;}
+a{text-decoration: none;}
+/* width 값이 % 로 된 이미지들이 브라우저 폭이 줄 경우 비례를 맞추어 줄도록 하기 위해 사용 ipad 사이즈에서 */
+
