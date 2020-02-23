@@ -53,7 +53,7 @@ body {
     height:100%;
     width:0;
     color:#fff;
-    transition: 1s;
+    transition: 1.5s;
     overflow-x:hidden;
 }
 
@@ -63,7 +63,7 @@ body {
     text-indent:30px;
 }
 
-#gnb li:first-child{
+#gnb li:last-child{
     cursor: pointer;
     position: absolute;
     top: 0;
@@ -72,7 +72,7 @@ body {
     margin-left: 50px;
 }
 
-#gnb li:nth-child(2){
+#gnb li:first-child{
     margin-top:120px;
 }
 
