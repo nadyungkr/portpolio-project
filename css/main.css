@@ -2,7 +2,6 @@ body {
     font-family: 'Nanum Gothic',sans-serif;
     font-size:13px;
 }
-
 /*헤더시작*/
 #header{
     position:fixed;
@@ -30,7 +29,7 @@ body {
     transform:translateY(-50%);
     left:1%;
     z-index: 11;
-    color:#222;
+    color:#444;
     text-align:center;
     line-height: 50px;
     font-size:40px;
@@ -116,15 +115,13 @@ body {
     margin-top:30px;   
     line-height:1.8; 
 }
-
 /*home 끝*/
-
 /*슬라이드 시작*/
 .slidewrap{
     width:600px;
-    height:76%;
+    height:780px;
     background:rgba(255,255,255,.7);
-    margin-left:50px;
+    margin:50px 0 0 50px;
 }
 
 .slidecontent{
@@ -214,23 +211,134 @@ body {
 /*슬라이드 끝*/
 
 /*profile 시작*/
-.s3 h2{
-    font-size:100px;
-    text-align: center;
-    color:#fff;
+.s3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    font-weight:900;
+}
+
+@media (max-width: 400px) {
+    .s3{
+        font-size: 50px;} 
+}
+
+.s3 ul {
+    margin-top:500px;
+}
+
+.s3 ul li {
+    cursor: pointer;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 0.02em;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s cubic-bezier(0.67, 0.01, 0.15, 0.98); 
+    margin-left:100px;
+}
+  
+.PARK {
+    background-image: linear-gradient(180deg, #fff 0%, #fff 50%, transparent 50.1%);
+    background-position: 100% 0%;
+    background-size: 100% 0%; 
+}
+
+.PARK:hover {
+    background-size: 100% 200%; 
+    transition:all 1s;
+}
+  
+.AGE {
+    background-image: linear-gradient(270deg, #fff 0%, #fff 50%, transparent 50.1%);
+    background-position: 100% 0%;
+    background-size: 0% 100%; 
+}
+  
+.AGE:hover {
+    background-size: 200% 100%;
+    transition:all 1s; 
+}
+  
+.MAIL {
+    background-image: linear-gradient(0deg, #fff 0%, #fff 50%, transparent 50.1%);
+    background-position: 100% 100%;
+    background-size: 100% 0%; 
+}
+    
+.MAIL:hover {
+    background-size: 100% 200%; 
+    transition:all 1s;
+}
+  
+.PUBLISHER {
+    background-image: linear-gradient(90deg, #fff 0%, #fff 50%, transparent 50.1%);
+    background-size: 0% 100%; 
+}
+    
+.PUBLISHER:hover {
+    background-size: 200% 100%; 
+    transition:all 2s;
+}
+  
+.FRONT {
+    background-image: linear-gradient(135deg, #fff 0%, #fff 50%, transparent 50.1%);
+    background-size: 0% 100%; 
+}
+.FRONT:hover {
+    background-size: 220% 100%; 
+    transition:all 2s;
+}
+  
+.NEWCOMER {
+    background-image: radial-gradient(circle farthest-corner at center center, #fff 0%, #fff 50%, transparent 50.1%);
+    background-position: 50% 50%;
+    background-size: 0% 0%; 
+}
+.NEWCOMER:hover {
+    background-size: 200% 400%; 
+    transition:all 1s;
 }
 /*profile 끝*/
 
 
 /*풀페이지 옵션 시작*/
+
 #fp-nav.fp-right li{
     /*오른쪽 메뉴 페이저*/
-    margin-bottom:20px !important;
+    margin:30px !important;
 }
 
-#fp-nav.fp-right li span{
-    background:#fff !important
+#fp-nav.fp-right li a span{
+    width:12px !important;
+    height:12px !important;
+    border-radius:50% !important;
+    background:#fff !important;
+    opacity:.6 !important;
 }
+
+#fp-nav ul li a.active span{
+    /*active 된 메뉴 페이저*/
+    width:12px !important;
+    height:12px !important;
+    border-radius:50% !important;
+    opacity:1 !important;
+    margin:-2px 0 0 -2px !important;
+}
+
+#fp-nav ul li:hover a span,.fp-slidesNav ul li:hover a span{
+    width: 20px !important;
+    height: 20px !important;
+    margin: -6px 0 0 -6px !important;
+}
+
+#fp-nav ul li .fp-tooltip{
+    /*네비게이션 툴팁*/
+    font-size:20px !important;
+    font-family:'Nanum Gothic',sans-serif !important;
+    right:25px !important; 
+}
+
 
 .fp-slidesNav.fp-bottom{
     /*슬라이드 네비 페이저*/
@@ -248,18 +356,16 @@ body {
     border-radius:50%;
     border:2px solid #333;
     text-align:center;
-    margin-top:250px;
+    margin-top:700px;
     z-index:10;
 }
 
 .s2 > .fp-controlArrow.fp-prev{
-    top:50%;
-    transform:translateY(-50%);
+    top:0;
     left:100px;
 }
 .s2 > .fp-controlArrow.fp-next{
-    transform:translateY(-50%);
-    top:50%;
+    top:0;
     left:160px;
 }
 
