@@ -228,7 +228,7 @@ body {
 .s3 {
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
-    letter-spacing: 0.02em;
+    letter-spacing: 1.3px;
     font-weight:900;
 }
 
@@ -237,15 +237,32 @@ body {
         font-size: 50px;} 
 }
 
+
+/*sns btn*/
+
+.sns_wrap{
+    width:500px;
+    height:200px;
+    margin:360px auto 0;
+    outline:1px solid red;
+    text-align:center;
+}
+
+
+/*sns btn끝*/
+
+
+
 .s3 ul {
-    margin-top:500px;
+    outline:1px solid red;
 }
 
 .s3 ul li {
+    outline:1px solid blue;
     width:500px;
     cursor: pointer;
     -webkit-text-stroke-color: #fff;
-    -webkit-text-stroke-width: 0.02em;
+    -webkit-text-stroke-width: 0.8px;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-repeat: no-repeat;
@@ -314,6 +331,8 @@ body {
     background-size: 200% 400%; 
     transition:all 1s;
 }
+
+
 /*profile 끝*/
 
 
