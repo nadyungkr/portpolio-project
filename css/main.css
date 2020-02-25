@@ -242,6 +242,7 @@ body {
 }
 
 .s3 ul li {
+    width:500px;
     cursor: pointer;
     -webkit-text-stroke-color: #fff;
     -webkit-text-stroke-width: 0.02em;
