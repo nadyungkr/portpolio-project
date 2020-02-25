@@ -58,17 +58,28 @@ body {
 
 #gnb li{
     font-size:32px;
-    padding-bottom:50px;
+    padding:25px 0;
     text-indent:30px;
+}
+
+#gnb li:hover{
+    background:rgba(255,255,255,.1);
+    transition: all .5s;
+}
+
+#gnb li:last-child:hover{
+    background:transparent;
 }
 
 #gnb li:last-child{
     cursor: pointer;
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 0;
     font-size: 60px;
-    margin-left: 50px;
+    display:inline-block;
+    padding:25px;
+    text-indent:0;
 }
 
 #gnb li:first-child{
@@ -77,6 +88,9 @@ body {
 
 #gnb li a{
     color:#fff;
+    display: block;
+    width:100%;
+    height:100%;
 }
 /*gnb끝*/
 
