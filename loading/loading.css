@@ -1,0 +1,53 @@
+* { 
+  box-sizing: border-box; 
+}
+
+body { 
+    overflow: hidden; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    width: 100%; 
+    height: 100vh; 
+    background: #f4815b; 
+    background: -moz-linear-gradient(45deg, #f4815b 0%, #ee5663 100%); 
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #f4815b), color-stop(100%, #ee5663)); background: -webkit-linear-gradient(45deg, #f4815b 0%, #ee5663 100%); background: -o-linear-gradient(45deg, #f4815b 0%, #ee5663 100%); background: -ms-linear-gradient(45deg, #f4815b 0%, #ee5663 100%); background: linear-gradient(45deg, #f4815b 0%, #ee5663 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4815b', endColorstr='#ee5663', GradientType=1 ); 
+    font-family: 'Montserrat', sans-serif; 
+  }
+
+body div { 
+    min-width: 500px; 
+    background: rgba(255, 255, 255, 0.85); 
+    padding: 40px 60px; 
+    border-radius: 10px; 
+    box-shadow: -2px 19px 59px 0px #c52d39; 
+}
+
+body div h1 { 
+    font-size: 8em; 
+    color: #FD9FA5; 
+    position: relative; 
+    margin: 0px; 
+}
+
+body div h1:after { 
+    content: attr(data-back); 
+    width: 0%; 
+    height: 100%; 
+    background: #ee5662; 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    position: absolute; 
+    left: 0px; 
+    top: 0px; 
+    animation: backMasking 4s infinite; 
+}
+
+@keyframes backMasking { 
+      0% { width: 0%; }
+    100% { width: 100%; } 
+}
+@-webkit-keyframes backMasking { 
+    0% { width: 0%; }
+  100% { width: 100%; } }
